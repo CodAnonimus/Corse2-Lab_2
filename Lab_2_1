@@ -1,0 +1,63 @@
+using System;
+using System.ComponentModel.Design;
+
+namespace Kod1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Введіть число від 1 до 12");
+            string cislo = Console.ReadLine();
+
+            if (int.TryParse(cislo, out int cislo2) && cislo2 >= 1 && cislo2 <= 12) ;
+            {
+
+                switch (cislo2)
+                {
+                    case 1:
+                        Console.WriteLine("Січень");
+                        break;
+                    case 2:
+                        Console.WriteLine("Лютий");
+                        break;
+                    case 3:
+                        Console.WriteLine("Березень");
+                        break;
+                    case 4:
+                        Console.WriteLine("Квітень");
+                        break;
+                    case 5:
+                        Console.WriteLine("Травень");
+                        break;
+                    case 6:
+                        Console.WriteLine("Червень");
+                        break;
+                    case 7:
+                        Console.WriteLine("Липень");
+                        break;
+                    case 8:
+                        Console.WriteLine("Серпень");
+                        break;
+                    case 9:
+                        Console.WriteLine("Вересень");
+                        break;
+                    case 10:
+                        Console.WriteLine("Жовтень");
+                        break;
+                    case 11:
+                        Console.WriteLine("Листопад");
+                        break;
+                    case 12:
+                        Console.WriteLine("Грудень");
+                        break;
+
+                    default:
+                        Console.WriteLine("Будь ласка, Введіть коректне занчення від 1 до 12");
+                        break;
+                }
+            }
+        }
+    }
+}
+
